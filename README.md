@@ -77,7 +77,7 @@ The following SaaS and managed commercial platforms provide out-of-the-box infra
 
 ## 💻 Open-Source GitHub Projects
 
-Curated open-source frameworks for self-hosted multi-agent orchestration, autonomous data exploration, and agentic workflows. **Sorted descending by GitHub Stars_Count**.
+Curated open-source frameworks for self-hosted multi-agent orchestration, autonomous data exploration, and agentic workflows. **Sorted descending by GitHub_Stars_Count**.
 
 ### 1. **[Significant-Gravitas/AutoGPT](https://github.com/Significant-Gravitas/AutoGPT)** [![Stars](https://img.shields.io/github/stars/Significant-Gravitas/AutoGPT?style=social&color=white)](https://github.com/Significant-Gravitas/AutoGPT/stargazers)
 * **Description:** The pioneering autonomous AI agent framework designed to break down high-level objectives into autonomous sub-tasks, browse the web, execute terminal commands, and persist long-term memory.
