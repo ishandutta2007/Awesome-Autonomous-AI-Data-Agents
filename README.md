@@ -44,48 +44,16 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## SaaS/Hosted Platforms
 
-
-
-- **[Snowflake Cortex Agents](https://www.snowflake.com/)**
-
-  **Governed data agent platform** within Snowflake's AI stack. Agents follow a six-step loop (sensing → reasoning → planning → coordination → acting → learning), calling **Cortex Analyst** for text-to-SQL over governed semantic views and **Cortex Search** for unstructured document retrieval. Tool calls can extend to MCP-connected systems like Jira or Salesforce. Per-tenant isolation via row access policies, spend controls, and runtime guardrails against prompt injection—all enforced inside Snowflake's security perimeter . **Pricing**: Quote-only; consumption-based on Snowflake credits. **Free tier**: Trial credits available. **Best for**: enterprises with mature Snowflake deployments wanting agents grounded in governed, access-controlled data rather than raw tables—**trade-off**: value depends entirely on data readiness and existing Snowflake adoption.
-
-
-
-- **[Cognition Devin](https://cognition.com/)**
-
-  **Autonomous software engineering agent** operating as a "teammate" for engineering teams. Series E raised over **$2B at a $48B valuation** (September 2026); run-rate revenue grew from $492M to almost $900M since May 2026. Customers include NVIDIA, GE Aerospace, Citi, Mercedes-Benz, and Modal. Capabilities expanded to **Auto-Triage** (incident investigation), **Security Swarm** (vulnerability discovery and triage), and **Automations** triggered by Slack, GitHub, or Linear events . **Pricing**: Quote-only; subscription-based. **Free tier**: None. **Best for**: enterprises wanting autonomous coding and operational agents at scale—**trade-off**: premium pricing and the reality that "self-driving software" is still emerging.
-
-
-
-- **[Lindy AI](https://www.lindy.ai/)**
-
-  **AI teammate for business operations** handling email, meeting prep, scheduling, reports, dashboards, and CRM updates. Works privately or in shared Slack threads. **Context that compounds**—retains useful context across work without re-explanation. **Security**: SOC 2 Type II, GDPR, HIPAA, PIPEDA compliant; encrypted in transit and at rest; never trained on customer data; approval controls for autonomous actions . **Pricing**: Quote-only; tiered by usage. **Free tier**: Limited trial. **Best for**: teams wanting a general-purpose operational agent that completes finished work (reports, handoffs) rather than just answering questions—**trade-off**: not specialized for deep data analysis or engineering.
-
-
-
-- **[AgentOps](https://www.agentops.ai/)**
-
-  **Agent observability and operations platform** with auto-instrumentation for OpenAI, LangChain, CrewAI, and other frameworks. `agentops.init()` captures LLM calls and agent actions automatically . **Pricing**: Free tier; paid plans by events. **Free tier**: Yes, limited events. **Best for**: teams running agents in production wanting tracing, cost tracking, and debugging—**trade-off**: observability layer, not an agent builder.
-
-
-
-- **[MultiOn](https://www.multion.ai/)**
-
-  **Web browsing agent API** enabling agents to navigate and interact with websites via natural language instructions. Available as a CrewAI tool (`MultiOnTool`) for browser automation within multi-agent workflows . **Pricing**: Quote-only; API usage-based. **Free tier**: Trial available. **Best for**: teams needing agents that can browse the web and extract data dynamically—**trade-off**: web automation focus, not general data agent orchestration.
-
-
-
-- **[Adept](https://www.adept.ai/)** (**Likely Closed**)
-
-  **Machine learning model for computer interaction**—raised **$350M** with investors including A.Capital, Spark Capital, and Air Street Capital. Latest activity July 2026; Parsers VC lists status as "Probably Closed." Press mentions include Amazon AGI unit layoffs (July 2026), suggesting team absorption rather than standalone operation . **Pricing**: N/A. **Free tier**: N/A. **Best for**: **historical reference only—do not build on this platform.**
-
-
-
-- **[Fixie.ai](https://fixie.ai/)** (**Acquired, Redirects to Ultravox**)
-
-  **Originally a general-purpose platform for wiring language models into applications** (raised $17M seed in March 2023). Pivoted to **Ultravox**, a speech-native voice AI model. **Acquired by Inworld AI on September 30, 2026**; fixie.ai now redirects to ultravox.ai. Open-weight Ultravox models remain on Hugging Face . **Pricing**: N/A. **Free tier**: N/A. **Best for**: **historical reference only—the platform no longer exists as a standalone product.**
-
+| Platform | Overview & Key Capabilities | Starting Pricing | Free Tier / Trial Limits | Best For / Trade-offs |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Snowflake Cortex Agents](https://www.snowflake.com/)** | Governed data agent platform inside Snowflake AI stack. Employs a 6-step loop, Cortex Analyst (text-to-SQL over semantic views), Cortex Search (unstructured docs), and MCP connectors (Jira, Salesforce). Enforces row-level policies and guardrails within Snowflake perimeter. | **$2.00 / credit** (Standard Edition On-Demand; Enterprise at $3.00/credit) | **30-day free trial with $400 usage credits** (requires upgrade to on-demand after 30 days or credit exhaustion; no permanent free tier) | **Best for:** Enterprises with mature Snowflake deployments wanting governed data access.<br>**Trade-off:** High dependency on Snowflake adoption and data readiness. |
+| **[Cognition Devin](https://cognition.com/)** | Autonomous software engineering agent teammate. Capabilities include Auto-Triage (incident investigation), Security Swarm (vulnerability triage), and workflow automations triggered by Slack, GitHub, or Linear. | **$20 / month** (Pro Tier; Max at $200/mo; Teams at $80 base + $40/seat/mo; Enterprise with ACUs via custom quote) | **Free Plan ($0/mo)**: Light agent coding quota, limited model access, unlimited inline edits and tab completions (no persistent cloud agent compute) | **Best for:** Autonomous coding and engineering operations at scale.<br>**Trade-off:** Premium cost; autonomous software engineering remains an evolving domain. |
+| **[Lindy AI](https://www.lindy.ai/)** | AI teammate for business operations handling email, meeting prep, scheduling, reports, dashboards, and CRM updates. Cross-task compounding context, SOC 2 Type II, GDPR, HIPAA compliant with human-in-the-loop approval gates. | **$29.99 / user / month** (Plus/Team Tier with 3,000 pooled credits; top-ups at $10 per 1,000 credits) | **7-day free trial with $50 worth of free credits** (no credit card required; access expires after 7 days or credit depletion; no permanent free tier) | **Best for:** Teams needing general operational workflow and report automation.<br>**Trade-off:** Not specialized for deep data engineering or code compilation. |
+| **[AgentOps](https://www.agentops.ai/)** | Agent observability and operations platform with auto-instrumentation for OpenAI, LangChain, CrewAI, and AutoGen capturing LLM calls, tool execution, and session cost tracking. | **$40.00 / month** (Pro Tier with pay-as-you-go event overages; Enterprise via custom quote) | **Free Forever Tier**: **10,000 events / month**, core session tracking, framework integrations, and basic telemetry log retention | **Best for:** Production tracing, debugging, and cost monitoring across multi-agent workflows.<br>**Trade-off:** Observability layer only; does not build or orchestrate agents. |
+| **[MultiOn](https://www.multion.ai/)** | Autonomous web browsing agent API enabling agents to navigate websites, complete web forms, and extract live data via natural language. Integrates into CrewAI via MultiOnTool. | **$20.00 / month** (Pro Tier; API consumption billed at ~$0.01 per action / session-based billing) | **Free Tier**: **50 free actions/credits per month** (or up to 10 daily test requests on playground/developer sandbox) | **Best for:** Workflows needing autonomous web browsing, search, and dynamic web action execution.<br>**Trade-off:** Specialized in browser automation; not a general enterprise data platform. |
+| **[LangGraph Cloud / Platform](https://www.langchain.com/langgraph)** | Hosted agent deployment and orchestration infrastructure within LangSmith. Provides managed serverless infrastructure, state checkpointing, and human-in-the-loop streaming. | **$39.00 / user / month** (LangSmith Plus includes 1 free Small Serverless deployment; metered compute/memory beyond) | **Free Developer Plan**: **5,000 traces / month** and 1 seat for prototyping (managed cloud serverless deployments require paid Plus plan) | **Best for:** Stateful, cyclic graph agents built with LangGraph needing managed deployment and checkpointing.<br>**Trade-off:** Requires LangSmith subscription for production hosting. |
+| **[Fixie.ai](https://fixie.ai/)** *(Acquired / Defunct)* | Original platform for building and wiring natural language LLM agents with tools. Pivoted to Ultravox (speech-native voice model) and acquired by Inworld AI in September 2026; fixie.ai redirects to ultravox.ai. | **Historical: $0.00** developer tier / API consumption (Acquired by Inworld AI; standalone product discontinued) | **Historical developer limit**: 1,000 free agent calls / day during developer preview; current Ultravox has limited free minutes sandbox | **Historical reference only** — do not build new projects on this platform. |
+| **[Adept](https://www.adept.ai/)** *(Defunct / Inactive)* | ML lab for computer interaction and action models (ACT-1). Raised $350M; core team and IP licensed to Amazon in 2024. Standalone operations effectively closed. | **Historical: Pilot-only** (Never launched a public self-serve SaaS tier; closed enterprise pilot access only) | **Historical limit**: Closed enterprise pilot access only; no public free tier or trials | **Historical reference only** — do not build on this platform. |
 
 
 ## Open-Source GitHub Projects
