@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Autonomous-AI-Data-Agents/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Autonomous-AI-Data-Agents?style=social&color=white" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Autonomous-AI-Data-Agents/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Autonomous-AI-Data-Agents?style=social&color=white" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Autonomous-AI-Data-Agents/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Autonomous-AI-Data-Agents?style=social" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Autonomous-AI-Data-Agents/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Autonomous-AI-Data-Agents?color=blue" alt="GitHub Issues" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Autonomous-AI-Data-Agents/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Autonomous-AI-Data-Agents?color=green" alt="License" /></a>
@@ -77,7 +77,7 @@ The following SaaS and managed commercial platforms provide out-of-the-box infra
 
 ## 💻 Open-Source GitHub Projects
 
-Curated open-source frameworks for self-hosted multi-agent orchestration, autonomous data exploration, and agentic workflows. **Sorted descending by GitHub Star Count**.
+Curated open-source frameworks for self-hosted multi-agent orchestration, autonomous data exploration, and agentic workflows. **Sorted descending by GitHub Stars_Count**.
 
 ### 1. **[Significant-Gravitas/AutoGPT](https://github.com/Significant-Gravitas/AutoGPT)** [![Stars](https://img.shields.io/github/stars/Significant-Gravitas/AutoGPT?style=social&color=white)](https://github.com/Significant-Gravitas/AutoGPT/stargazers)
 * **Description:** The pioneering autonomous AI agent framework designed to break down high-level objectives into autonomous sub-tasks, browse the web, execute terminal commands, and persist long-term memory.
