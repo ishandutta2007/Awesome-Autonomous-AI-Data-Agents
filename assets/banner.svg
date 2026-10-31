@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080b14" />
+      <stop offset="40%" stop-color="#0d1326" />
+      <stop offset="80%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="30%" stop-color="#818cf8" />
+      <stop offset="70%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#f472b6" />
+    </linearGradient>
+
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+
+    <!-- Subtle Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="card-glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#6366f1" flood-opacity="0.2" />
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="cyber-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.6" stroke-opacity="0.3" />
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes pulseOrb {
+      0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.35; }
+      50% { transform: scale(1.15) translate(20px, -15px); opacity: 0.6; }
+    }
+    @keyframes floatAgent1 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes floatAgent2 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(8px); }
+    }
+    @keyframes dataPulse {
+      0% { stroke-dashoffset: 200; }
+      100% { stroke-dashoffset: 0; }
+    }
+    .orb-anim-1 { animation: pulseOrb 8s ease-in-out infinite; transform-origin: 200px 100px; }
+    .orb-anim-2 { animation: pulseOrb 10s ease-in-out infinite reverse; transform-origin: 1080px 300px; }
+    .agent-node-1 { animation: floatAgent1 5s ease-in-out infinite; }
+    .agent-node-2 { animation: floatAgent2 6s ease-in-out infinite; }
+    .data-flow-line {
+      stroke-dasharray: 8 6;
+      animation: dataPulse 4s linear infinite;
+    }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1280" height="400" fill="url(#bg-grad)" />
+  <rect width="1280" height="400" fill="url(#cyber-grid)" />
+
+  <!-- Dynamic Glowing Background Orbs (Non-obstructive) -->
+  <g opacity="0.6">
+    <circle class="orb-anim-1" cx="220" cy="110" r="160" fill="#38bdf8" filter="url(#glow)" opacity="0.25" />
+    <circle class="orb-anim-2" cx="1060" cy="280" r="180" fill="#a855f7" filter="url(#glow)" opacity="0.22" />
+    <circle cx="640" cy="380" r="120" fill="#3b82f6" filter="url(#glow)" opacity="0.15" />
+  </g>
+
+  <!-- Animated Data Agent Network Constellation (Background Layer) -->
+  <g opacity="0.4">
+    <!-- Connecting Stream Lines -->
+    <path class="data-flow-line" d="M 140 200 Q 280 120 420 210 T 700 190 T 960 220 T 1140 180" fill="none" stroke="#818cf8" stroke-width="2" />
+    <path class="data-flow-line" d="M 180 280 Q 380 340 580 270 T 880 310 T 1100 260" fill="none" stroke="#38bdf8" stroke-width="1.5" />
+
+    <!-- Agent Node Elements -->
+    <g class="agent-node-1">
+      <circle cx="140" cy="200" r="8" fill="#38bdf8" />
+      <circle cx="140" cy="200" r="16" fill="none" stroke="#38bdf8" stroke-width="1" opacity="0.5" />
+    </g>
+    <g class="agent-node-2">
+      <circle cx="1140" cy="180" r="8" fill="#c084fc" />
+      <circle cx="1140" cy="180" r="16" fill="none" stroke="#c084fc" stroke-width="1" opacity="0.5" />
+    </g>
+  </g>
+
+  <!-- Ambient Border / Header Accent -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#title-grad)" />
+
+  <!-- FOREGROUND CONTENT: Guaranteed Clear & Legible -->
+  <g id="foreground-typography">
+    <!-- Category Pill -->
+    <g transform="translate(640, 68)">
+      <rect x="-160" y="-18" width="320" height="36" rx="18" fill="#1e293b" stroke="#475569" stroke-width="1.2" filter="url(#card-glow)" />
+      <circle cx="-130" cy="0" r="5" fill="#22c55e">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
+      </circle>
+      <text x="-115" y="5" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="1.5">CURATED ECOSYSTEM 2026</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="640" y="150" text-anchor="middle" fill="url(#title-grad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="46" font-weight="800" letter-spacing="-0.5">
+      Awesome Autonomous AI Data Agents
+    </text>
+
+    <!-- Subtitle / Tagline -->
+    <text x="640" y="198" text-anchor="middle" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="400" letter-spacing="0.2">
+      Multi-Agent Orchestration, Governed Data Access &amp; Production Observability
+    </text>
+
+    <!-- Feature Attribute Badges / Pills in Foreground -->
+    <g transform="translate(640, 275)">
+      <!-- Pill 1: Governed Data -->
+      <g transform="translate(-390, 0)">
+        <rect x="0" y="0" width="170" height="42" rx="10" fill="#111827" stroke="#38bdf8" stroke-width="1" opacity="0.9" />
+        <text x="85" y="26" text-anchor="middle" fill="#7dd3fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600">🛡️ Governed Data</text>
+      </g>
+      <!-- Pill 2: Multi-Agent Systems -->
+      <g transform="translate(-195, 0)">
+        <rect x="0" y="0" width="180" height="42" rx="10" fill="#111827" stroke="#818cf8" stroke-width="1" opacity="0.9" />
+        <text x="90" y="26" text-anchor="middle" fill="#a5b4fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600">🤖 Multi-Agent Fleet</text>
+      </g>
+      <!-- Pill 3: Production Observability -->
+      <g transform="translate(15, 0)">
+        <rect x="0" y="0" width="185" height="42" rx="10" fill="#111827" stroke="#c084fc" stroke-width="1" opacity="0.9" />
+        <text x="92" y="26" text-anchor="middle" fill="#d8b4fe" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600">📊 Observability Ops</text>
+      </g>
+      <!-- Pill 4: Open Infrastructure -->
+      <g transform="translate(225, 0)">
+        <rect x="0" y="0" width="170" height="42" rx="10" fill="#111827" stroke="#34d399" stroke-width="1" opacity="0.9" />
+        <text x="85" y="26" text-anchor="middle" fill="#6ee7b7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600">⚡ Open Source</text>
+      </g>
+    </g>
+
+    <!-- Sub-text Footer Indicator -->
+    <text x="640" y="358" text-anchor="middle" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500">
+      ⚡ Open Source Frameworks &bull; Enterprise SaaS Platforms &bull; Production Architectures
+    </text>
+  </g>
+</svg>
