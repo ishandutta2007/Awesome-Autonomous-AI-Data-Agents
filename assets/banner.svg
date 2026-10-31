@@ -141,7 +141,7 @@
 
     <!-- Sub-text Footer Indicator -->
     <text x="640" y="358" text-anchor="middle" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500">
-      ⚡ Open Source Frameworks &bull; Enterprise SaaS Platforms &bull; Production Architectures
+      ⚡ Open Source Frameworks • Enterprise SaaS Platforms • Production Architectures
     </text>
   </g>
 </svg>
